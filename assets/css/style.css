@@ -1,0 +1,235 @@
+/* ============================= */
+/*   Triveni Shop Billing System */
+/*   Shopify Inspired Mobile UI  */
+/*   Font: SF Pro Display        */
+/* ============================= */
+
+
+/* ---------- SF PRO FONT IMPORT ---------- */
+@font-face {
+    font-family: "SF Pro";
+    src: url("../fonts/SF-Pro.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ---------- GLOBAL RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- BODY ---------- */
+body {
+    font-family: "SF Pro", sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+
+/* ---------- MOBILE APP CONTAINER ---------- */
+.mobile-app {
+    max-width: 420px;
+    margin: auto;
+    padding: 15px;
+    padding-bottom: 90px;
+    /* space for bottom nav */
+}
+
+
+/* ---------- HEADER ---------- */
+.header {
+    background: linear-gradient(to bottom, #111827, #1f2937);
+    color: white;
+    padding: 18px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.header h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header p {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.75;
+}
+
+
+/* ---------- CARD CONTAINER ---------- */
+.card {
+    margin-top: 18px;
+    background: white;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- LABELS ---------- */
+label {
+    display: block;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+}
+
+label i {
+    margin-right: 6px;
+    color: #16a34a;
+}
+
+
+/* ---------- INPUTS ---------- */
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    font-family: "SF Pro", sans-serif;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #16a34a;
+    box-shadow: 0px 0px 0px 3px rgba(22, 163, 74, 0.2);
+}
+
+
+/* ---------- BUTTON ---------- */
+.btn-primary {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(to right, #16a34a, #22c55e);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-primary i {
+    margin-right: 6px;
+}
+
+.btn-primary:hover {
+    opacity: 0.92;
+}
+
+
+/* ---------- LINK BELOW FORM ---------- */
+.bottom-link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.bottom-link a {
+    color: #16a34a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bottom-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- CART SECTION ---------- */
+.cart-box h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 25px;
+    color: gray;
+    font-size: 14px;
+}
+
+
+/* ---------- CART ITEM UI (Future Use) ---------- */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-top: 1px solid #eee;
+}
+
+.cart-item strong {
+    font-size: 14px;
+}
+
+.cart-item small {
+    font-size: 13px;
+    color: gray;
+}
+
+.cart-item span {
+    font-weight: 600;
+}
+
+
+/* ---------- FOOTER TEXT ---------- */
+.footer-text {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: gray;
+}
+
+
+/* ---------- BOTTOM NAVIGATION ---------- */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 12px 0;
+
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.bottom-nav i {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.bottom-nav a.active {
+    color: #16a34a;
+    font-weight: 700;
+}
